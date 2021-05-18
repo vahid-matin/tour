@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    font-family: "Vazir", "yekan", tahoma, arial;
+  }
+  /*Variable*/
+  :root{
+    --color-orange: #f38181;
+    --color-green: #eaffd0;
+  }
+  /*Font*/
+  @font-face {
+font-family: "yekan";
+src: url('../Fonts/BYekan.eot'); /* IE9 Compat Modes */
+src: url('../Fonts/BYekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../Fonts/BYekan.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../Fonts/BYekan.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../Fonts/BYekan+.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+  @font-face {
+font-family: "Vazir";
+src: url('../Fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Medium.eot'); /* IE9 Compat Modes */
+src: url('../Fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+   url('../Fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../Fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../Fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+  body{
+    font-family: "yekan", calibri , tahoma , arial ;
+  }
+  .header{
+    background: url(../Images/fin-kashan-1920.jpg) center no-repeat  gray;
+    width:100%;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+  }
+  .menu-list{
+    list-style: none;
+    padding-top: 50px;
+  }
+  .menu-list__item{
+    display: inline-block;
+  }
+  .menu-list__link{
+    text-decoration: none;
+    border: solid 2px #b83b5e;
+    background-color: #f38181;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .cta{
+    background-color: #f38181;
+    border-radius: 5px;
+    padding: 1px 5px 5px 10px;
+    color: #eaffd0;
+  }
+  .arrow-down{
+    background-color: #333333;
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    cursor: pointer ;
+    }
+  .arrow-link{
+    text-decoration: none;
+    font-size: 35px;
+    color:var(--color-orange);
+    transition: all 0.5s;
+    position: relative;
+    top:2px;
+  }
+  .arrow-link:hover{
+    color:var(--color-green)
+  }
+  .menu-list__link:hover{
+    color:#fce38a
+  }
+  .menu-list__link--active{
+    color:#fce38a
+  }
+  .logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  .header-text{
+    color: white;     
+    padding-top: 150px;
+    font-size: 28px;
+    text-shadow: 3px 3px 2px black;
+  }
+  /*About*/
+  .about-image{
+    float: left;
+    margin-right: 25px;
+  }
+  .row{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .about{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../Images/pattern.png);
+  }
+.about p, .about ul{
+  font-family: "Vazir","yekan", arial;
+  color: #3b3939;
+      }
+      .about h2, .about h3{
+        color: #b83b5e;
+      }
+      .about li{
+        list-style: none;
+      }
+
+      /* Itinerary */
+      .itinerary{
+        /*background-image: url(../Images/flower-dark.png);*/
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+      .itinerary h3{
+          color: #f38181;
+      }
+      .itinerary p{
+          font-family: "Vazir","yekan", tahoma;
+      }
+      .itinerary-img1{
+        float: left;
+        margin-right: 20px;
+      }
+      .itinerary-img2{
+        float: right;
+        margin-left: 20px;
+      }
+      .clearfix{
+          clear: both;
+      }
+      /* Book*/
+      .book{
+         background-image: url(../Images/pattern.png);  
+         padding: 20px 0;
+      }
+      .book-header{
+          text-align: center;
+          font-size: 22px;
+      }
+      .book-form .form-group{
+          margin-bottom: 20px;
+      }
+      .book-form{
+        max-width: 400px;
+        margin: 0 auto;
+        font-family: "Vazir", "yekan", tahoma, arial;
+      }
+      input, textarea, select{
+          font-family: "Vazir","yekan",tahoma;
+      }
+      .book-form .form-control{
+        display: block;
+        width: 100%;
+        border: solid 2px #cccccc;
+        border-radius: 5px;
+        padding: 7px;
+        transition: all 0.3s;
+      }
+      .book-form .form-control:focus{
+        background-color: #ccc;
+        border: solid 2px #4278ca;
+        outline: 0;
+      }
+      .book-form label{
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      .book-form .buttom{
+        padding: 7px 20px;
+        cursor: pointer;
+        background-color:#11abb0;
+        border-radius: 6px;
+        border: 0;
+        transition: 0.2s;
+      }
+      .book-form .buttom:hover{
+        background-color: aqua;
+        color: #5b41ee;
+      }
+      .book-form .required{
+        color: rgb(255, 0, 0);
+        font-size: 25px;
+      }
+      .book-form .checkbox{
+        position: relative;
+        margin-bottom: 7px;
+      }
+      .checkbox .checkbox-input{
+        position: absolute;
+        margin-top: 6px;
+      }
+      .book-form .checkbox-label{
+        margin-right: 20px;
+      }
+
+      /* footer */
+      .footer{
+        background-color: #2e2e2e;
+        text-align: center;
+        padding: 50px;
+        position: relative;
+
+      }
+      .footer__lists{
+        list-style: none;
+      }
+      .footer__list{
+        display: inline-block;
+      }
+      .footer__link{
+        color: rgb(88, 166, 218);
+        transition: all 0.5s;
+        padding: 20px;
+      }
+      .footer__link:hover{
+        color: white;
+      }
+      .footer__copyright{
+        margin-top: 20px;
+        color: violet;
+      }
+      .footer__arrowup{
+        background-color: #333333;
+        position: absolute;
+        top: -24px;
+        right: 50%;
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+        cursor: pointer ;
+        }
+      .footer__arrowlink{
+        text-decoration: none;
+        font-size: 35px;
+        color:var(--color-orange);
+        transition: all 0.5s;
+        position: relative;
+        top:-4px;
+      }
+      .footer__arrowlink:hover{
+        color:var(--color-green)
+      }
+      
+      /* Footer subscribe  */
+.footer__subscribe {
+  position: relative;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.footer__input{
+  background: none;
+  display: block;
+  color: #aaaaaa;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  border: 1px solid #727272;
+  border-radius: 3px;
+  direction: ltr;
+}
+.footer__button {
+  font-family: "vazir", "yekan", tahoma, arial;
+  background: #7f7f7f;
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.footer__input:focus {
+  outline: 0;
+}
+.footer__button:hover {
+  background-color: #707070;
+} 
